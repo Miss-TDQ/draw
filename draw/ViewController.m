@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "RestView.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    RestView *vc = [[[NSBundle mainBundle]loadNibNamed:@"RestView" owner:nil options:nil]lastObject];
+    
+    vc.frame = self.view.bounds;
+    [vc setFinishBlock:^{
+        NSLog(@"休息时间完成");
+    } interruptBlock:^{
+        NSLog(@"中断休息");
+    }];
+    [self.view addSubview:vc];
 }
 
 - (void)didReceiveMemoryWarning {

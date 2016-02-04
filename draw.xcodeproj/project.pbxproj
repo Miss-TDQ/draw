@@ -15,6 +15,9 @@
 		4CCAD3711C61F1C600579A5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCAD36F1C61F1C600579A5C /* LaunchScreen.storyboard */; };
 		4CCAD37C1C61F1C600579A5C /* drawTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCAD37B1C61F1C600579A5C /* drawTests.m */; };
 		4CCAD3871C61F1C600579A5C /* drawUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCAD3861C61F1C600579A5C /* drawUITests.m */; };
+		4CCAD3971C61F1F500579A5C /* RestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCAD3951C61F1F500579A5C /* RestView.m */; };
+		4CCAD39B1C61F41500579A5C /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CCAD39A1C61F41500579A5C /* CircleView.m */; };
+		4CCAD39D1C61FA7F00579A5C /* RestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCAD39C1C61FA7F00579A5C /* RestView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		4CCAD3821C61F1C600579A5C /* drawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCAD3861C61F1C600579A5C /* drawUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = drawUITests.m; sourceTree = "<group>"; };
 		4CCAD3881C61F1C600579A5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CCAD3941C61F1F500579A5C /* RestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestView.h; sourceTree = "<group>"; };
+		4CCAD3951C61F1F500579A5C /* RestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestView.m; sourceTree = "<group>"; };
+		4CCAD3991C61F41500579A5C /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		4CCAD39A1C61F41500579A5C /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
+		4CCAD39C1C61FA7F00579A5C /* RestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RestView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,11 @@
 				4CCAD3651C61F1C600579A5C /* AppDelegate.m */,
 				4CCAD3671C61F1C600579A5C /* ViewController.h */,
 				4CCAD3681C61F1C600579A5C /* ViewController.m */,
+				4CCAD3941C61F1F500579A5C /* RestView.h */,
+				4CCAD3951C61F1F500579A5C /* RestView.m */,
+				4CCAD39C1C61FA7F00579A5C /* RestView.xib */,
+				4CCAD3991C61F41500579A5C /* CircleView.h */,
+				4CCAD39A1C61F41500579A5C /* CircleView.m */,
 				4CCAD36A1C61F1C600579A5C /* Main.storyboard */,
 				4CCAD36D1C61F1C600579A5C /* Assets.xcassets */,
 				4CCAD36F1C61F1C600579A5C /* LaunchScreen.storyboard */,
@@ -245,6 +258,7 @@
 			files = (
 				4CCAD3711C61F1C600579A5C /* LaunchScreen.storyboard in Resources */,
 				4CCAD36E1C61F1C600579A5C /* Assets.xcassets in Resources */,
+				4CCAD39D1C61FA7F00579A5C /* RestView.xib in Resources */,
 				4CCAD36C1C61F1C600579A5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CCAD3691C61F1C600579A5C /* ViewController.m in Sources */,
+				4CCAD39B1C61F41500579A5C /* CircleView.m in Sources */,
 				4CCAD3661C61F1C600579A5C /* AppDelegate.m in Sources */,
+				4CCAD3971C61F1F500579A5C /* RestView.m in Sources */,
 				4CCAD3631C61F1C600579A5C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +512,7 @@
 				4CCAD38D1C61F1C600579A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CCAD38E1C61F1C600579A5C /* Build configuration list for PBXNativeTarget "drawTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +521,7 @@
 				4CCAD3901C61F1C600579A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CCAD3911C61F1C600579A5C /* Build configuration list for PBXNativeTarget "drawUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +530,7 @@
 				4CCAD3931C61F1C600579A5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
